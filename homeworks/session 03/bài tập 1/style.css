@@ -1,0 +1,39 @@
+.container{
+    padding: 40px;
+}
+.row{
+    font-family: sans-serif;
+    font-weight: 750;
+    font-size: 12px;
+    margin-bottom: 16px;
+    border:1px solid #ccc;
+    height: 40px;
+    color: white;
+    text-align: right;
+}
+.right-column{
+    color: black;
+    text-align: left;
+}
+.left-column1{
+    background-color: rgb(226, 68, 68);
+}
+.left-column2{
+    background-color: rgb(0, 247, 255);
+}
+.left-column3{
+    background-color: rgb(0, 255, 128);
+}
+.left-column4{
+    background-color: rgb(228, 224, 5);
+}
+.left-column5{
+    background-color: rgb(191, 17, 226);
+}
+.left-column6{
+    background-color: rgb(255, 0, 234);
+}
+.left-column7{
+    background-color: rgb(9, 102, 223);
+}
+

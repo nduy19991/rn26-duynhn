@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<table lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            font-size: 16px;
+            font-family: Arial, Helvetica, sans-serif;
+            text-align: left;
+        }
+
+        table{
+            width: 700px;
+        }
+
+        table, td, th{
+            border: 1.5px solid #333;
+            border-collapse: collapse;
+        }
+
+        td, th{
+            padding: 10px 10px;
+        }
+
+        .table.table-dark{
+            background-color: black;
+            color: white;
+        }
+
+        .table.table-hover tbody tr:hover{
+            background-color: #333;
+
+        }
+
+        .diagonalCross{
+            background: linear-gradient(to top left, black calc(50% - 1px), white , black calc(50% + 1px) )
+        }    
+    </style>
+</head>
+<table class="table table-dark table-hover">
+    <thead>
+        <th>STT</th>
+        <th>Họ</th>
+        <th>Tên</th>
+        <th>Giới tính</th>
+        <th>Lương</th>
+    </thead>
+    <tbody>
+        <tr>
+            <td>1</td>
+            <td class="diagonalCross"></td>
+            <td>Duy</td>
+            <td>Nam</td>
+            <td>$2000</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>Đỗ Thị Hồng</td>
+            <td>Nhung</td>
+            <td>Nữ</td>
+            <td>$1500</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>Nguyễn Văn</td>
+            <td>Dương</td>
+            <td>Nam</td>
+            <td>$2500</td>
+        </tr>
+        <tr>
+            <td>4</td>
+            <td>Đoàn Ngọc</td>
+            <td>Lợi</td>
+            <td>Nam</td>
+            <td>$2000</td>
+        </tr>
+        <tr>
+            <td>5</td>
+            <td>Nguyễn Đỗ My</td>
+            <td>Na</td>
+            <td>Nữ</td>
+            <td>$1000</td>
+        </tr>
+        <tr>
+            <td>6</td>
+            <td>Đàm Thanh</td>
+            <td>Phương</td>
+            <td class="diagonalCross">Nữ</td>
+            <td>$1000</td>
+        </tr>
+    </tbody>    
+    
+    <tfoot>
+        <th colspan="4">Tổng</th>
+        <td>$10 000</td>
+    </tfoot>
+</table>
+</body>
+</html>
