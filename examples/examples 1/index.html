@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="../../bootstrap-4.6.2-dist/css/bootstrap.min.css">
+</head>
+<body>
+    <div class="tab-order">
+        <header>
+            <img class="logo" src="./kfc.png" />
+        </header>
+            
+        <div class="oder">
+            <h1 class="header">Your order from KFC</h1>
+            <ul class="order-items">
+                <li class="order-item">
+                    <spam class="item-name">Pizza Diavola</spam>
+    
+                    <span class="item-quanlity">
+                        <button class="btn-od-1">-</button>
+                        <input type="number" value="1">
+                        <button class="btn-od-1">+</button>
+                        <span class="item-price">
+                            <span>$7.99</span>
+                            <button class="btn-od-1">x</button>
+                        </span>
+                    </span>
+                        
+                </li>
+                <li class="order-item">
+                    <spam class="item-name">British Pizza</spam>
+    
+                    <span class="item-quanlity">
+                        <button class="btn-od-2">-</button>
+                        <input type="number" value="1">
+                        <button class="btn-od-1">+</button>
+                        <span class="item-price">
+                            <span>$9.99</span>
+                            <button class="btn-od-1">x</button>
+                        </span>
+
+                    </span>
+                </li>
+            </ul>
+            <button id="btn-add">Add Food</button>
+    
+            <div class="order-summary">
+                <p>Subtotal <spam id="sub-total" class="money">$15.98</spam></p><hr>
+                <p>Shipping <spam id="shipping" class="money">$2</spam></p><hr>
+                <p>Total <spam id="total" class="money">$17</spam></p><hr>
+            </div>
+    
+            <button id="btn-checkout">Checkout</button>
+        </div> 
+    </div>
+    
+    <script src="../../bootstrap-4.6.2-dist/js/bootstrap.bundle.min.js"></script>
+    <script src="../../bootstrap-4.6.2-dist/js/bootstrap.min.js"></script>
+</body>
+</html>
