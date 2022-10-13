@@ -1,0 +1,28 @@
+iframe {
+    width: 100%;
+}
+
+.login {
+    margin: auto;
+    width: 50%;
+    margin-bottom: 10px;
+}
+
+.password {
+    position: relative;
+}
+
+.eye {
+    position: absolute;
+    right: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    max-width: 20px;
+    padding-top: 30px;
+    color: rgba(70, 70, 70, 0.384);
+}
+
+.hidden {
+    display: none;
+}

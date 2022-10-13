@@ -10,42 +10,62 @@
 
     .row {
         display: flex;
-        margin: auto;
-        width: 60%;
-        height: 50px;
+        margin: 20px;
+        width: 70%;
+        height: 45px;
+        /* margin-top: 50px; */
+        font-family: sans-serif;
+        /* font-size: 24px; */
+     }
 
+     .left {
+        height: 100%;
+        width: 20%;
+        display: flex;
+     }
+
+     .right {
+        height: 100%;
+        width: 70%;
+        background-color: rgb(221, 222, 223);
      }
 
      .percent {
-        background-color: rgb(221, 222, 223);
         height: 100%;
-        width: 80%;
-        display: flex;
+        width: 20%;
+        display: flex
 
      }
+     .text {
+        color: white;
+        text-align: center; 
+           
+    }
+
      /* BACKGROUND COLOR LEFT */
     
     .l1 {
-        background-color: red;
+        background-color: rgb(187, 0, 0);
     }
 
       /* BACKGROUND COLOR LEFT */
     .p1 {
-        background-color: brown;
+        background-color: red;
     }
 
     </style>
 </head>
 <body>
-    <div class="row">
-        <div class="left l1">
-            <h6 class="text">BANDWIDTH</h6>
-        </div>
-        <div class="right">
-            <div class="percent p1">
-                <h6 class="text">20%</h6>
+        <div class="row">
+            <div class="left l1">
+                <h6 class="text">BANDWIDTH</h6>
             </div>
-        </div>
+            <div class="right">
+                <div class="percent p1">   
+                <h6 class="text">20%</h6>  
+                </div>
+            </div>
+    </div>
     </div>
     <scripts src="../../../../bootstrap-4.6.2-dist/js/bootstrap.bundle.js"></scripts>
     <scripts src="../../../../bootstrap-4.6.2-dist/js/bootstrap.min.js"></scripts>

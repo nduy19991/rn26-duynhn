@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./tn.css">
+    <link rel="stylesheet" href="../../../bootstrap/css/bootstrap.min.css">
+</head>
+<body>
+
+    <div class="wrapper">
+        <h1>Parity Check</h1> <hr color="white">
+        <h4>Enter number</h4>
+        <form class="number" onsubmit="return false">
+            <input type="number" placeholder="Your number" id="input__number">
+            <button type="submit" onclick="handleSubmit()" class="btn__check">Check</button>
+        </form>
+    </div>
+    
+    <script>
+        function handleSubmit() {
+             
+            let valueNumber = document.getElementById("input__number")
+
+            if (valueNumber.value % 2 == 0){
+    
+                alert("a là số chẵn");
+            }
+            else{
+                alert("a là số lẽ");
+
+}
+     
+        }
+    </script>
+    <script src="../../../bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="../../../bootstrap/js/bootstrap.min.js"></script>
+</body>
+</html>

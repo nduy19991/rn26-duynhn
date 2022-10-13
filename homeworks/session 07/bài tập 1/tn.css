@@ -1,0 +1,35 @@
+.wrapper {
+    margin: auto;
+    width: 21%;
+    background-color: orange;
+    border-radius: 20px;
+    text-align: center;
+    height: 200px;
+    color: black; 
+    margin-top: 50px;
+}
+
+h1 {
+    padding-top: 15px;
+}
+
+.number {
+    margin-top: 15px;
+}
+
+#input__number {
+    border-radius: 20px;
+    border: 1px solid white;
+    background-color: white;
+    width: 115px;
+}
+
+#input__number:hover {
+    border: 2px solid lightskyblue;
+}
+
+.btn__check {
+    border-radius: 5px;
+    border: 1px solid white;
+    background-color: white;
+}
