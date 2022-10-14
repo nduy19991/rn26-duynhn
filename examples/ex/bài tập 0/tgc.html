@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script type="text/javascript">
+      var N = prompt("Nhap gia tri N");
+
+      N = parseInt(N);
+
+      //N = 4; * = 2i -1; space = N - i//
+
+      for (let index = 1; index <= N + 1; index++) {
+        let space = "";
+        for (let indexSpace = 0; indexSpace <= N - index; indexSpace++) {
+          space += " ";
+        }
+          let star = "";
+          for (let indexStar = 1; indexStar <= 2 * index - 1; indexStar++) {
+            star += "*";
+            
+          } 
+          document.writeln(space + star)
+          
+
+          console.log(space + star);
+      }
+      
+    </script>
+
+  </body>
+</html>
