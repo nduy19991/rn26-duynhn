@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let n = prompt("Số lít xăng")
+        console.log(n.value);
+        let a = prompt("Giá xăng 1L")
+        console.log(a.value);
+        let b = prompt("Giá xăng 2L")
+        console.log(b.value);
+
+        if (b >= 2 * a) {
+            let x = 0;
+            x = (n / 1) * a;
+            alert(x);
+        } else {
+            let y = 0;
+            y = parseInt(n / 2) * b + (n % 2) * a;
+            document.write(y)
+        }
+    </script>
+
+</body>
+
+</html>

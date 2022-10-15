@@ -1,34 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-  </head>
-  <body>
+</head>
+
+<body>
     <script>
-      let n = prompt("Nhap gia tri N");
+        let n = prompt("Nhập giá trị n :")
 
-      //N = 4; * = 2i -1; space = N - i//
+        for (let i = 1; i <= n; i++) {
+            let space = "";
+            for (let isp = 1; isp <= n - i; isp++) {
+                space += "-";
+            }
+            let star = "";
+            for (let ist = 1; ist <= 2 * i - 1; ist++) {
+                star += "*";
+            }
+            console.log(space + star);
+            document.writeln(space + star)
+            document.writeln("<br>")
 
-    for (let i = 1; i <= n; i++) {
-    let space = "";
-    for (let iSp = 1; iSp <= n - i ; iSp++) {
-      space += " ";
-    }
-    let star = "";
-    for (let iSt = 1; iSt <= 2 * i - 1; iSt++) {
-      star += "*";
-    }
-    document.write(space + star);
-    document.write("<br>")
-    console.log(space + star)
-    }
-     
-
-      
+        }
     </script>
 
-  </body>
+</body>
+
 </html>
