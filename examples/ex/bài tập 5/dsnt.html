@@ -11,21 +11,29 @@
 <body>
     <script>
         let a = prompt('Nhap gia tri N')
-        let flag = true
+        let reArray = []
 
-        if (a > 1) {
-            for (i = 2; i < a; i++) {
-                if (a % i == 0) {
-                    flag = false;
-                    break;
+        function isSNT(_a) {
+            let flag = true
+
+            if (_a > 1) {
+                for (let i = 2; i < _a; i++) {
+                    if (_a % i === 0) {
+                        flag = false;
+                        break;
+                    }
                 }
             }
-            if (flag) {
-                document.writeln(a + " is prime number")
-            } else {
-                document.writeln(a + " is not prime number")
+            return flag
+        }
+        for (let i = 2; i <= a; i++) {
+            let isNT = isSNT(i)
+            if (isNT === true) {
+                reArray.push(i)
             }
         }
+
+        document.writeln(reArray);
     </script>
 </body>
 
