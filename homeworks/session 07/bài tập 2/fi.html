@@ -1,57 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="./fi.css">
-    <link rel="stylesheet" href="../../../bootstrap/css/bootstrap.min.css">
-</head>
+    <link rel="stylesheet" href="./fi.css" />
+    <link rel="stylesheet" href="../../../bootstrap/css/bootstrap.min.css" />
+  </head>
 
-<body>
-
+  <body>
     <div class="wrapper">
-        <h1>FIBONACCI</h1> <hr color="white">
-        <h4>Enter number</h4>
-        <form class="number" onsubmit="return false">
-            <input type="number" placeholder="Your number" id="input__number">
-            <button type="submit" onclick="handleSubmit()" class="btn__submit">Submit</button>
-        </form>
+      <h1>FIBONACCI</h1>
+      <hr color="white" />
+      <h4>Enter number</h4>
+      <form class="number" onsubmit="return false">
+        <input type="number" placeholder="Your number" id="input__number" />
+        <button type="submit" onclick="handleSubmit()" class="btn__submit">
+          Submit
+        </button>
+      </form>
     </div>
 
-
-
- <script>
-
-    function handleSubmit() {
-        
-        let number = document.getElementById("input__number").value
+    <script>
+      function handleSubmit() {
+        let number = document.getElementById("input__number").value;
 
         let n1 = 0;
 
-        let n2 = 1; 
+        let n2 = 1;
 
         let n;
 
         document.write("");
-        for(i = 0; i < number; i++){
-            if (i <= 1) {
-                n =i;  
-            } else {
-                n =n1 + n2;
-                n1 = n2;
-                n2=n;
-            }
-            if (n > number) {    
-            } else {
-                document.write(n + " ");    
-            }
+        for (i = 0; i < number; i++) {
+          if (i <= 1) {
+            n = i;
+          } else {
+            n = n1 + n2;
+            n1 = n2;
+            n2 = n;
+          }
+          if (n > number) {
+          } else {
+            document.write(n + " ");
+          }
         }
-
-    }
-    
-</script>
-</body>
-
+      }
+    </script>
+  </body>
 </html>

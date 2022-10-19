@@ -10,22 +10,24 @@
 
 <body>
     <script>
+        
         let n = prompt("Số lít xăng")
-        console.log(n.value);
+        
         let a = prompt("Giá xăng 1L")
-        console.log(a.value);
+        
         let b = prompt("Giá xăng 2L")
-        console.log(b.value);
-
-        if (b >= 2 * a) {
-            let x = 0;
-            x = (n / 1) * a;
-            alert(x);
-        } else {
-            let y = 0;
-            y = parseInt(n / 2) * b + (n % 2) * a;
-            document.write(y)
+        
+  
+        if (b >= 2*a) {
+          c = n*a
+          document.writeln(c)
         }
+        if (b <= 2*a) {
+          c = parseInt(n/2)*b -[n/(c*2)]*a
+          document.writeln(c)
+        }
+
+      
     </script>
 
 </body>
