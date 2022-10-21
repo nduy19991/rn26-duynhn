@@ -1,0 +1,36 @@
+  .tab {
+      padding-top: 150px;
+      margin: auto;
+      width: 50%;
+  }
+  
+  .table {
+      background-color: black;
+  }
+  
+  tr td {
+      color: white;
+  }
+  
+  th {
+      font-weight: 600;
+      color: white;
+  }
+  
+  .dt {
+      background-color: red;
+      border-radius: 5px;
+      border: none;
+      color: white;
+  }
+  
+  .dl {
+      background-color: green;
+      border-radius: 5px;
+      border: none;
+      color: white;
+  }
+  
+  tr:nth-child(even) {
+      background-color: rgb(32, 41, 32);
+  }

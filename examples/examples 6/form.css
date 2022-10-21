@@ -26,3 +26,8 @@ iframe {
 .hidden {
     display: none;
 }
+
+.imgg {
+    margin-left: 170px;
+    height: 200px;
+}
