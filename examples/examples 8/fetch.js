@@ -23,9 +23,9 @@ function formatRow(user) {
      <th>${user?.id}</th>
      <td>${user?.name}</td>
      <td>${user?.createdAt}</td>
-     <td>Male</td>
-     <td><button class="dt" onclick = "gotoDetail()">Detail</button></td>
-     <td><button class="dl" onclick = "deleteRowJs()">Delete</button></td>
+     <td>${user?.age}</td>
+     <td><button class="dt" onclick = "gotoDetail(${user?.id})">Detail</button></td>
+     <td><button class="dl" onclick = "deleteRowJs(this,${user?.id})">Delete</button></td>
 `
 }
 
@@ -39,32 +39,39 @@ function addRowJs(user) {
 }
 
 function gotoDetail(id) {
-    console.log(id);
+    console.log(window.location.href, id);
+    window.location.href = "./detail.html?id=" + id;
 }
 
 function deleteRowJs(elm) {
     let elmRow = elm.parentElement.parentElement;
     console.log(elmRow);
     elmRow.remove();
-    document.getElementById("table_users").deleteRow(index);
+    // document.getElementById("table_users").deleteRow(index);
 }
 
-function postUser() {
-    const data = {
-        name: "Duynhn",
-        avatar:
-            "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/254.jpg",
-    };
-    fetch(url, {
-        method: "POST",
-        headers: {
-            "Content-Type": "application/json",
-        },
-        body: JSON.stringify(data),
-    })
+function deleteRowAPI(elm, id) {
+    let url = "https://634e9e514af5fdff3a62367c.mockapi.io/users/"
+    fetch(url + id,
+        {
+            method: "DELETE",
+        }
+    )
         .then((response) => response.json())
-        .then((res) => console.log(res))
+        .then((data) => {
+            console.log(data);
+            deleteRowJs(elm)
+            // resetTbody();
+            // getListUsers();
+        })
         .catch((error) => {
             console.error("Error:", error);
         });
 }
+
+// function resetTbody() {
+//     var tableRef = document
+//     .getElementById("table_users")
+//     .getElementsByTagName("tbody")[0];
+//     tableRef.innerHTML = "";
+// }
