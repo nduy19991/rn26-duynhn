@@ -27,9 +27,9 @@ function getIdUrl() {
 
 function renderInfo(user) {
   const contentHTML = `
-      <img src = "${user?.avatar}" style="border-radius: 50%; width: 90%">
+      <div style="width: 50%; margin: auto"><img src = "${user?.avatar}" style="border-radius: 50%; width: 100%;"></div>
       <p style="margin-top: 20px;">No : ${user?.id}</p>
-      <p>Age : ${user?.age}</p>
+      <p style>Age : ${user?.age}</p>
       <p>Name : ${user?.name}</p>
       <p>Create : ${user?.createdAt}</p>
     `;
