@@ -8,3 +8,7 @@ nav {
     background-color: lightgray;
     height: 70px;
 }
+
+a:hover {
+    box-shadow: 0 3px black;
+  }
