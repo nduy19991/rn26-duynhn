@@ -4,5 +4,9 @@ iframe {
 
 #container {
     margin: auto;
-    width: 15%;
+    width: 17%;
+}
+
+h1 {
+    margin-bottom: 30px;
 }

@@ -38,7 +38,7 @@ function addRowJs(user) {
 
 function gotoDetail(id) {
   console.log(window.location.href, id);
-  window.location.href = "./detail.html?id ="+ id;
+  window.location.href = "./detail.html?id=" + id;
 }
 
 function deleteRowJs(elm) {
@@ -72,4 +72,3 @@ function deleteRowAPI(elm, id) {
       console.error("Error:", error);
     });
 }
-
