@@ -29,7 +29,7 @@ function renderInfo(user) {
   const contentHTML = `
       <div style="width: 50%; margin: auto"><img src = "${user?.avatar}" style="border-radius: 50%; width: 100%;"></div>
       <p style="margin-top: 20px;">No : ${user?.id}</p>
-      <p style>Age : ${user?.age}</p>
+      <p style>Age : 22</p>
       <p>Name : ${user?.name}</p>
       <p>Create : ${user?.createdAt}</p>
     `;
