@@ -23,3 +23,15 @@ iframe {
     border-radius: 10px;
   }
 
+  .row {
+    width: 100%;
+  }
+
+  .left li {
+    font-weight: 400;
+    font-size: 18px;
+  }
+
+  .bar {
+    box-shadow: 0 4px black;
+  }

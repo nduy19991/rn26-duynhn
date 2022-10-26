@@ -40,3 +40,8 @@ form {
     margin: auto;
     width: 70%;
 }
+
+.error {
+    color: red;
+    font-size: 13px;
+  }
