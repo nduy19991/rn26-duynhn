@@ -28,17 +28,6 @@ iframe {
     width: 100%;
 }
 
-li {
-    width: 27%;
-    font-weight: 500;
-    font-size: 18px;
-}
-
-li:hover {
-    color: aquamarine;
-    box-shadow: 0 2px aquamarine;
-}
-
 .center {
     width: 80%;
     margin: auto;
