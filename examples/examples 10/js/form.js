@@ -12,18 +12,6 @@ eyeColse.addEventListener("click", function () {
     input.setAttribute("type", "text")
 });
 
-// function handleReset() {
-//     let elementInputEmail = document.getElementById('input__email');
-//     let elementInputPassword = document.getElementById('input__password');
-//     let elementInputCheckBox = document.getElementById('input__checkbox');
-//     if (elementInputEmail) {
-//         elementInputEmail.value = '';
-//     }
-//     if (elementInputCheckBox) {
-//         elementInputCheckBox.checked = false;
-//     }
-// }
-
 function handleSubmit(event) {
     alert("Submit success")
     let elementInputEmail = document.
@@ -33,8 +21,8 @@ function handleSubmit(event) {
     let objectUser = {
         name: elementInputEmail?.value,
         // createdAt: elementInputPassword?.value,
-        avatar:"./nd.png",
-        age:"22"
+        avatar: "../img/nd.png",
+        age: "22"
     }
      console.log(objectUser);
     postData(objectUser)
@@ -78,7 +66,7 @@ var settings = {
         email: {
           required: 'Please enter your email',
         //   minlength: jQuery.validator.format('Toi thieu co {0} ky tu'),
-        email: 'Dia chi email khong hop le',
+        // email: 'Dia chi email khong hop le',
         },
         password: {
             required: 'Please enter your password',
