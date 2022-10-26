@@ -3,6 +3,10 @@ iframe {
     height: 100px;
 }
 
+.bar {
+    box-shadow: 0 4px black;
+  }
+
 .content {
     margin: auto;
     width: 85%;
@@ -43,6 +47,3 @@ iframe {
     font-size: 18px;
   }
 
-  .bar {
-    box-shadow: 0 4px black;
-  }

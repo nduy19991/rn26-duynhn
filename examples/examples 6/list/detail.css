@@ -2,6 +2,10 @@ iframe {
     width: 100%;
 }
 
+.bar {
+    box-shadow: 0 4px black;
+  }
+
 #container {
     margin: auto;
     width: 25%;

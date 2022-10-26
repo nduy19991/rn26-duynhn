@@ -2,6 +2,10 @@ iframe {
     width: 100%;
 }
 
+.bar {
+    box-shadow: 0 4px black;
+  }
+
 .login {
     margin: auto;
     width: 50%;
