@@ -15,13 +15,35 @@ iframe {
     margin-bottom: 25px;
     padding-top: 20px;
     padding-left: 20px;
+    width: 100%;
 }
 
 .right {
     background-color: aquamarine;
     height: 300px;
     border-radius: 10px;
-  }
+}
+
+.row {
+    width: 100%;
+}
+
+li {
+    width: 27%;
+    font-weight: 500;
+    font-size: 18px;
+}
+
+li:hover {
+    color: aquamarine;
+    box-shadow: 0 2px aquamarine;
+}
+
+.center {
+    width: 80%;
+    margin: auto;
+}
+
 
   .row {
     width: 100%;
