@@ -22,7 +22,7 @@ a:hover {
     box-shadow: 0 4px black;
   }
 
-.login {
+#login {
     margin: auto;
     width: 50%;
     margin-bottom: 10px;

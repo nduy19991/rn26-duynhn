@@ -31,8 +31,16 @@ function renderInfo(user) {
       <p style="margin-top: 20px;">No : ${user?.id}</p>
       <p>Age : ${user?.age}</p>
       <p>Name : ${user?.name}</p>
-      <p>Create : ${user?.createdAt}</p>
+      <p>Address : ${user?.address}</p>
+      <button class="dt" style="border-radius: 5px; background-color: aquamarine;  border: 1px;" onclick = "gotoUpdate(${user?.id})">Update</button>
     `;
   const elm = document.getElementById("info");
   elm.innerHTML = contentHTML;
 }
+
+function gotoUpdate(id) {
+  console.log(window.location.href, id);
+  window.location.href = "../html/form.html?id=" + id;
+}
+
+function renderInfo()

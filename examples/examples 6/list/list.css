@@ -47,3 +47,7 @@ tbody tr:hover {
 button:hover {
     color: black;
 }
+
+.diagonalCross{
+    background: linear-gradient(to top left, black calc(50% - 1px), white , black calc(50% + 1px) )
+} 

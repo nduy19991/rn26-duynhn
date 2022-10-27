@@ -20,7 +20,7 @@ function formatRow(user) {
   return `
      <th>${user?.id}</th>
      <td>${user?.name}</td>
-     <td>${user?.createdAt}</td>
+     <td>${user?.address}</td>
      <td>${user?.age}</td>
      <td><button class="dt" onclick = "gotoDetail(${user?.id})">Detail</button></td>
      <td><button class="dl" onclick = "deleteRowAPI(this,${user?.id})">Delete</button></td>
