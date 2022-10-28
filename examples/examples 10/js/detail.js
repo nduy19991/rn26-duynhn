@@ -17,6 +17,7 @@ function getUser() {
       console.error("Error:", error);
     });
   console.log(id);
+
 }
 
 function getIdUrl() {
@@ -42,5 +43,3 @@ function gotoUpdate(id) {
   console.log(window.location.href, id);
   window.location.href = "../html/form.html?id=" + id;
 }
-
-function renderInfo()

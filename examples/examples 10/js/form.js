@@ -13,36 +13,36 @@
 // });
 
 function handleSubmit(event) {
-    alert("Submit success")
-    let elementName = document.getElementById('Name');
-    let elementAge = document.getElementById('Age');
-    let elementAddress = document.getElementById('Address')
-    // let elementInputCheckBox = document.getElementById('input__checkbox');
-    let objectUser = {
-        name: elementName?.value,
-        // createdAt: elementInputPassword?.value,
-        avatar: "../img/nd.png",
-        age: elementAge?.value,
-        address: elementAddress?.value,
-    }
-     console.log(objectUser);
-    postData(objectUser)
-    return false;
+  alert("Submit success");
+  let elementName = document.getElementById("Name");
+  let elementAge = document.getElementById("Age");
+  let elementAddress = document.getElementById("Address");
+  // let elementInputCheckBox = document.getElementById('input__checkbox');
+  let objectUser = {
+    name: elementName?.value,
+    // createdAt: elementInputPassword?.value,
+    avatar: "../img/nd.png",
+    age: elementAge?.value,
+    address: elementAddress?.value,
+  };
+  console.log(objectUser);
+  postData(objectUser);
+  return false;
 }
 function postData(user) {
-    let url = "https://634e9e514af5fdff3a62367c.mockapi.io/users"
-    fetch(url, {
-        method: "POST",
-        headers: {
-            "Content-Type": "application/json",
-        },
-        body: JSON.stringify(user),
-    })
-        .then((response) => response.json())
-        .then((res) => console.log(res))
-        .catch((error) => {
-            console.error("Error:", error);
-        });
+  let url = "https://634e9e514af5fdff3a62367c.mockapi.io/users";
+  fetch(url, {
+    method: "POST",
+    headers: {
+      "Content-Type": "application/json",
+    },
+    body: JSON.stringify(user),
+  })
+    .then((response) => response.json())
+    .then((res) => console.log(res))
+    .catch((error) => {
+      console.error("Error:", error);
+    });
 }
 
 // var settings = {
@@ -83,29 +83,27 @@ window.onload = function () {
 function getUser() {
   let id = getIdUrl();
   if (id) {
-    let url = "https://634e9e514af5fdff3a62367c.mockapi.io/users/"
+    let url = "https://634e9e514af5fdff3a62367c.mockapi.io/users/";
     fetch(url + id, {
       method: "GET",
     })
       .then((response) => response.json())
       .then((data) => {
         console.log(data);
-        document.getElementById("Name").value = data.name
-        document.getElementById("Age").value = data.age
-        document.getElementById("Address").value = data.address
-        document.getElementById("btn__submit").textContent = "Update"
-
+        document.getElementById("Name").value = data.name;
+        document.getElementById("Age").value = data.age;
+        document.getElementById("Address").value = data.address;
+        document.getElementById("btn__submit").textContent = "Update";
       })
       .catch((error) => {
         console.error("Error:", error);
       });
     console.log(id);
   }
-
 }
 
 function getIdUrl() {
   let url = new URL(window.location.href);
   let id = url.searchParams.get("id");
-  return id;
+     return id;
 }
