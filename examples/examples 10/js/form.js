@@ -105,5 +105,5 @@ function getUser() {
 function getIdUrl() {
   let url = new URL(window.location.href);
   let id = url.searchParams.get("id");
-     return id;
+  return id;
 }
